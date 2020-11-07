@@ -1,7 +1,6 @@
 package gokit
 
 import (
-	"fmt"
 	"net/url"
 )
 
@@ -19,7 +18,7 @@ func ParseURLQuery(rawurl, field string) (string, error) {
 	// fmt.Println(u.Host)
 	// fmt.Println(u.Path)
 	// fmt.Println(u.Fragment)
-	fmt.Println(u.RawQuery)
+	// fmt.Println(u.RawQuery)
 	v, err := url.ParseQuery(u.RawQuery)
 	if err != nil {
 		return "", err
