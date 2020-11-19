@@ -1,5 +1,7 @@
 package gokit
 
+import "time"
+
 //time format
 const (
 	TIME_YYYY_MM_DD_HH_MM_SS_M6TZ = "2006-01-02T15:04:05.000000Z"
@@ -15,3 +17,9 @@ const (
 	TIME_YYYYMMDDHHMM             = "200601021504"
 	TIME_YYYYMMDD                 = "20060102"
 )
+
+//ToDateString TIME_YYYYMMDD
+func ToDateString(t time.Time) string {
+	str := t.Format(TIME_YYYYMMDD)
+	return str
+}

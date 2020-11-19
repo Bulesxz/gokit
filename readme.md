@@ -9,7 +9,7 @@ ParseURLQuery
 - Toxxxx
 
 ## time 时间格式化模板
-- 
+- ToDateString 时间转换为字符串
 
 ## 常用函数封装
 - InArray 元素是否在数据组中
